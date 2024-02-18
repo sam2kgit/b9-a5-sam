@@ -54,7 +54,7 @@
         </div>
     </nav>
     <main>
-        <!-- banner -->
+  <!-- banner -->
         <section class="banner">
 
             <h1 class="mt-[70px] text-white text-center font-extrabold text-6xl">End-to-End Travel with <br><span
@@ -62,11 +62,12 @@
             <p class="text-white  mt-8 text-center mb-8">Yes, you can run unit tests and view the results directly
                 within the app. The integrated testing <br> features allow for a streamlined .</p>
             <!-- button -->
-            <button class="btn btn-success w-[170px] h-[65px] bg-[#1dd100] font-bold text-xl ml-[560px] mt-6">buy
+            <button onclick="ticketSection()" class="btn btn-success w-[170px] h-[65px] bg-[#1dd100] font-bold text-xl ml-[560px] mt-6">buy
                 Tickets</button>
 
         </section>
-        <!-- coupon section -->
+
+  <!-- coupon section -->
         <section class="ml-[133px] mt-24 mb-12">
             <h1 class="ml-[460px]  font-bold text-5xl mb-12">Best offers for you</h1>
 
@@ -112,8 +113,9 @@
                 All Offers</button>
 
         </section>
-        <!-- ticket section -->
-        <section class="bg-[#F7F8F8] mt-11 border-t-2 border-t-[#1DD100]  rounded-t-3xl h-[2100px] p-[135px]">
+
+  <!-- ticket section -->
+        <section id="ticketSection" class="bg-[#F7F8F8] mt-11 border-t-2 border-t-[#1DD100]  rounded-t-3xl h-[2100px] p-[135px]">
             <!-- head titles -->
             <div>
                 <h1 class="text-3xl font-extrabold mb-6 flex justify-center">S Paribahan</h1>
@@ -136,8 +138,8 @@
                         <!-- seat number -->
                         <div class="w-[180px] h-[70px] bg-[#1dd10026] rounded-2xl ml-48 p-5 flex gap-2">
                             <img src="images/seat-green.png" alt="">
-                            <!-- number -->
-                            <h1 class="text-xl font-bold text-[#1DD100]">40</h1>
+      <!-- number -->
+                            <h1 id="seatleft" class="text-xl font-bold text-[#1DD100]">16</h1>
                             <p class="font-medium text-[#1DD100]">Seats left</p>
     
                         </div>
@@ -210,37 +212,45 @@
                     <!-- seats-A -->
                     <div class="flex gap-8 mb-10">
                       <h1 class="mt-4  text-xl">A .</h1>
-                      <button class=" btn w-[130px] h-[60px] text-2xl">A1</button>
-                      <button class=" btn w-[130px] h-[60px] text-2xl">A2</button>
-                      <button class="ml-14 btn w-[130px] h-[60px] text-2xl">A3</button>
-                      <button class=" btn w-[130px] h-[60px] text-2xl">A4</button>
+                     <div class="A flex gap-8">
+                        <button id="A1"  class=" btn w-[130px] h-[60px] text-2xl">A1</button>
+                        <button id="A2" class=" btn w-[130px] h-[60px] text-2xl">A2</button>
+                        <button id="A3" class="ml-14 btn w-[130px] h-[60px] text-2xl">A3</button>
+                        <button id="A4" class=" btn w-[130px] h-[60px] text-2xl">A4</button>
+                     </div>
                     </div>
                     <!-- seats B -->
                      <div class="flex gap-8 mb-10">
                       <h1 class="mt-4  text-xl">B .</h1>
-                      <button class=" btn w-[130px] h-[60px] text-2xl">B1</button>
-                      <button class=" btn w-[130px] h-[60px] text-2xl">B2</button>
-                      <button class="ml-14 btn w-[130px] h-[60px] text-2xl">B3</button>
-                      <button class=" btn w-[130px] h-[60px] text-2xl">B4</button>
+                      <div class="A flex gap-8">
+                        <button id="B1" class=" btn w-[130px] h-[60px] text-2xl">B1</button>
+                       <button id="B2" class=" btn w-[130px] h-[60px] text-2xl">B2</button>
+                       <button id="B3" class="ml-14 btn w-[130px] h-[60px] text-2xl">B3</button>
+                       <button id="B4" class=" btn w-[130px] h-[60px] text-2xl">B4</button>
+                      </div>
                     </div>
                     <!-- seats c -->
                      <div class="flex gap-8 mb-10">
                       <h1 class="mt-4  text-xl">C .</h1>
-                      <button class=" btn w-[130px] h-[60px] text-2xl">C1</button>
-                      <button class=" btn w-[130px] h-[60px] text-2xl">C2</button>
-                      <button class="ml-14 btn w-[130px] h-[60px] text-2xl">C3</button>
-                      <button class=" btn w-[130px] h-[60px] text-2xl">C4</button>
+                      <div class="A flex gap-8">
+                        <button id="C1" class=" btn w-[130px] h-[60px] text-2xl">C1</button>
+                      <button id="C2" class=" btn w-[130px] h-[60px] text-2xl">C2</button>
+                      <button id="C3" class="ml-14 btn w-[130px] h-[60px] text-2xl">C3</button>
+                      <button id="C4" class=" btn w-[130px] h-[60px] text-2xl">C4</button>
+                      </div>
                     </div>
                     <!-- seats D -->
                      <div class="flex gap-8 mb-10">
                       <h1 class="mt-4  text-xl">D .</h1>
-                      <button class=" btn w-[130px] h-[60px] text-2xl">D1</button>
-                      <button class=" btn w-[130px] h-[60px] text-2xl">D2</button>
-                      <button class="ml-14 btn w-[130px] h-[60px] text-2xl">D3</button>
-                      <button class=" btn w-[130px] h-[60px] text-2xl">D4</button>
+                      <div class="A flex gap-8">
+                        <button id="D1" class=" btn w-[130px] h-[60px] text-2xl">D1</button>
+                      <button id="D2" class=" btn w-[130px] h-[60px] text-2xl">D2</button>
+                      <button id="D3" class="ml-14 btn w-[130px] h-[60px] text-2xl">D3</button>
+                      <button id="D4" class=" btn w-[130px] h-[60px] text-2xl">D4</button>
+                      </div>
                     </div>
                     <!-- seats e -->
-                     <div class="flex gap-8 mb-10">
+                     <div class="hidden flex gap-8 mb-10">
                       <h1 class="mt-4  text-xl">E .</h1>
                       <button class=" btn w-[130px] h-[60px] text-2xl">E1</button>
                       <button class=" btn w-[130px] h-[60px] text-2xl">E2</button>
@@ -248,7 +258,7 @@
                       <button class=" btn w-[130px] h-[60px] text-2xl">E4</button>
                     </div>
                     <!-- seats F -->
-                     <div class="flex gap-8 mb-10">
+                     <div class="hidden flex gap-8 mb-10">
                       <h1 class="mt-4  text-xl">F .</h1>
                       <button class=" btn w-[130px] h-[60px] text-2xl">F1</button>
                       <button class=" btn w-[130px] h-[60px] text-2xl">F2</button>
@@ -256,7 +266,7 @@
                       <button class=" btn w-[130px] h-[60px] text-2xl">F4</button>
                     </div>
                     <!-- seats G -->
-                     <div class="flex gap-8 mb-10">
+                     <div class="hidden flex gap-8 mb-10">
                       <h1 class="mt-4  text-xl">G .</h1>
                       <button class=" btn w-[130px] h-[60px] text-2xl">G1</button>
                       <button class=" btn w-[130px] h-[60px] text-2xl">G2</button>
@@ -264,7 +274,7 @@
                       <button class=" btn w-[130px] h-[60px] text-2xl">G4</button>
                     </div>
                     <!-- seats h -->
-                     <div class="flex gap-8 mb-10">
+                     <div class="hidden flex gap-8 mb-10">
                       <h1 class="mt-4  text-xl">H .</h1>
                       <button class=" btn w-[130px] h-[60px] text-2xl">H1</button>
                       <button class=" btn w-[130px] h-[60px] text-2xl">H2</button>
@@ -272,7 +282,7 @@
                       <button class=" btn w-[130px] h-[60px] text-2xl">H4</button>
                     </div>
                     <!-- seats i -->
-                     <div class="flex gap-8 mb-10">
+                     <div class="hidden flex gap-8 mb-10">
                       <h1 class="mt-4  text-xl">I .</h1>
                       <button class=" btn w-[130px] h-[60px] text-2xl">I1</button>
                       <button class=" btn w-[130px] h-[60px] text-2xl">I2</button>
@@ -280,7 +290,7 @@
                       <button class=" btn w-[130px] h-[60px] text-2xl">I4</button>
                     </div>
                     <!-- seats j -->
-                     <div class="flex gap-8 mb-10">
+                     <div class="hidden flex gap-8 mb-10">
                       <h1 class="mt-4  text-xl">J .</h1>
                       <button class=" btn w-[130px] h-[60px] text-2xl">J1</button>
                       <button class=" btn w-[130px] h-[60px] text-2xl">J2</button>
@@ -302,16 +312,17 @@
                     <div class="flex gap-2">
                         <h1 class="text-2xl font-bold">Seat</h1>
                         <!-- seat selected -->
-                        <h1 class="w-8 h-8 rounded-full text-2xl text-white bg-[#1DD100] flex justify-center"> </h1>
+                        <h1 id="seatSelected" class="w-8 h-8 rounded-full text-2xl text-white bg-[#1DD100] flex justify-center">0</h1>
                     </div>
                     <h1 class="text-2xl font-bold">Class</h1>
-                    <h1 class="text-2xl font-bold">Seat</h1>
+                    <h1 class="text-2xl font-bold">Price</h1>
                   </div>
              <!--seat infossssss  -->
                 <!-- 2nd para -->
-                <div class="h-[170px]">
-
+                <div id="details" class="h-[170px] text-2xl ml-5 gap-14 mt-2">
+                    
                 </div>
+               
                 <!-- 3rd para -->
                 <div class="flex ">
                     <h1 class="text-2xl font-bold">Total Price</h1>
@@ -373,17 +384,10 @@
 
          </div>
 
-
         </section>
-
-
-
-
     </main>
 
-
-
-
+<script src="events.js"></script>
 </body>
 
 </html>
