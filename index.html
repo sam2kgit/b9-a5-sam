@@ -193,7 +193,7 @@
            <div class="w-[1200] h-[1268px] rounded-3xl bg-white mt-10 flex p-8">
 
              <!-- left side -->
-              <div >
+              <div id="leftS">
                 <h1 class="text-2xl font-bold">Select Your Seat</h1>
                 <div class="flex mt-10 mb-10">
                     <div class="flex gap-2">
@@ -328,16 +328,20 @@
                     <h1 class="text-2xl font-bold">Total Price</h1>
                     <!-- total price -->
                     <div class="">
-                        <h1 class="text-2xl font-bold ml-28">BDT:</h1>
+                        <h1 class="text-2xl font-bold ml-28">BDT: <span id="totalP" class="text-2xl font-bold"></span></h1>
                         <!-- total -->
-                        <h1 class="text-2xl font-bold"></h1>
+                        
                     </div>
                 </div>
+                <!-- discount para -->
+                <div id="discount" class="text-2xl font-bold">
+
+                </div>
                 <!-- coupon input 4th para -->
-                <div class="relative">
-                    <input type="text" placeholder="Have any copupon?" class="input w-[420px] h-16 mt-5 max-w-xs" />
+                <div id="couponBox" class="relative">
+                    <input id="couponI" type="text" placeholder="Have any copupon?" class="input w-[420px] h-16 mt-5 max-w-xs" />
                     <!-- apply button -->
-                    <button class="absolute right-8 top-7 btn w-[90px] h-[50px] bg-[#1DD100] text-white text-xl">Apply</button>
+                    <button id="apply" class="absolute right-8 top-7 btn w-[90px] h-[50px] bg-[#1DD100] text-white text-xl">Apply</button>
                     
                 </div>
                 <!-- 5th -->
@@ -345,7 +349,7 @@
                     <h1 class="text-2xl font-bold">Grand Total</h1>
                     <!-- total price -->
                     <div class="">
-                        <h1 class="text-2xl font-bold ml-[100px]">BDT:</h1>
+                        <h1 class="text-2xl font-bold ml-[100px]">BDT: <span id="grandTotal" class="text-2xl font-bold"></span></h1>
                         <!-- total -->
                         <h1 class="text-2xl font-bold"></h1>
                     </div>
