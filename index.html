@@ -42,7 +42,7 @@
 </head>
 
 <body class="raleway w-full">
-    <nav class="flex justify-between mx-[133px] ">
+    <nav id="nav" class="flex justify-between mx-[133px] ">
         <div>
             <h1 class="mt-11  font-extrabold w-[144px] h-10">P-Ticket</h1>
         </div>
@@ -55,7 +55,7 @@
     </nav>
     <main>
   <!-- banner -->
-        <section class="banner">
+        <section id="banner" class="banner">
 
             <h1 class="mt-[70px] text-white text-center font-extrabold text-6xl">End-to-End Travel with <br><span
                     class="text-[#1dd100]">S Paribahan</span></h1>
@@ -68,7 +68,7 @@
         </section>
 
   <!-- coupon section -->
-        <section class="ml-[133px] mt-24 mb-12">
+        <section id="cps" class="ml-[133px] mt-24 mb-12">
             <h1 class="ml-[460px]  font-bold text-5xl mb-12">Best offers for you</h1>
 
             <div class="flex gap-3">
@@ -182,10 +182,6 @@
                 </div>
 
              </div>
-
-
-
-
 
             </div>
 
@@ -373,7 +369,7 @@
                     <input type="text" class="grow" placeholder="Enter your email id" />
                   </label>
                   
-                  <button class="btn btn-block h-16 bg-[#1DD100] text-2xl text-white">Next</button>
+                  <button id="next" class="btn btn-block h-16 bg-[#1DD100] text-2xl text-white">Next</button>
 
               </div>
 
@@ -389,6 +385,25 @@
          </div>
 
         </section>
+  <!--next page  -->
+       <section id="done" class="bg-[#F2F1F1] flex justify-center items-center h-[1000px] hidden">
+
+        <div class="card w-[718px] h-[481px] bg-base-100 shadow-xl">
+            <figure class="px-10 pt-10 mt-4">
+              <img src="images/success.png" alt="Shoes" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title text-[#27AE60]">SUCCESS</h2>
+              <p class="text-2xl font-bold">Thank you for Booking Our Bus Seats. <br>
+                We are working hard to find the best service and deals for you. <br>  
+                <span class="font-normal">Shortly you will find a confirmation in your email.</span></p>
+              <div class="card-actions">
+                <button class="btn btn-wide w-[300px] rounded-3xl bg-[#27AE60] text-white text-xl">Continue</button>
+              </div>
+            </div>
+          </div>
+
+       </section>
     </main>
 
 <script src="events.js"></script>

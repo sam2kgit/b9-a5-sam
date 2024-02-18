@@ -75,20 +75,16 @@ function button(id){
           
             }
             
-        });    
+        }); 
+          const next = document.getElementById('next').addEventListener('click',function(){
+            const done= document.getElementById('done').classList.remove('hidden');
+            document.getElementById('ticketSection').classList.add('hidden');
+            document.getElementById('cps').classList.add('hidden');
+            document.getElementById('banner').classList.add('hidden');
+            document.getElementById('nav').classList.add('hidden');
+          }); 
 
 }
-
-// function cp(id){
-//     const couponI = document.getElementById('couponI');
-//     const input=couponI.value; 
-// console.log(input);
-     
-
-   
-
-//    }
-
 
 button('A1');button('A2');button('A3');button('A4');
 button('B1');button('B2');button('B3');button('B4');
